@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+</head>
+
+<body>
+<div id="panel">
+	<h5 class="head">news</h5>
+	<div class="content">this is news  this is news  this is news</div>
+	<div class="content">this is news  this is news  this is news</div>
+	<div class="content">this is news  this is news  this is news</div>
+	<div class="content">this is news  this is news  this is news</div>
+</div>
+	<script>
+		$(function(){
+			$("#panel h5.head").toggle(function(){
+//				$(this).next().hide(1000);
+//				$(this).next().slideUp(600);
+				$("#panel div").slideUp(600);
+				$(this).html("NEWS");
+			},function(){
+//				$(this).next().show(1000);
+//				$(this).next().slideDown(600);
+				$("#panel div").slideDown(600);
+				$(this).html("news");
+			})
+		})
+	</script>
+</body>
+</html>

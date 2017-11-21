@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+<style type="text/css">
+	.even1{background:#FFF38F;}
+	.odd1{background:#FFFFEE;}
+</style>
+</head>
+
+<body>
+	<table>
+		<thead>
+			<tr><th>姓名</th><th>性别</th><th>暂住地</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>娄鑫淼</td><td>男</td><td>上海</td></tr>
+			<tr><td>娄鑫淼</td><td>男</td><td>上海</td></tr>
+			<tr><td>娄鑫淼</td><td>男</td><td>上海</td></tr>
+			<tr><td>娄鑫淼</td><td>男</td><td>上海</td></tr>
+		</tbody>
+	</table>
+<script>
+	$(function(){
+		$("tbody>tr:odd").addClass("odd1");
+		$("tbody>tr:even").addClass("even1");
+	})
+</script>
+</body>
+</html>

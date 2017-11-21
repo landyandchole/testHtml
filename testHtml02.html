@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+<style>
+	.c1{
+		color:darkred;
+	}	
+/*	#username{
+		color:darkgray;
+	}
+	#password{
+		color:darkgray;
+	}*/
+</style>
+</head>
+
+<body>
+<!--	<form action="#">-->
+		<table>
+		  <tr>
+			  <td class="c1">username</td>
+				<td><input type="text" id="username" placeholder="请输入用户名"></td>
+		  </tr>
+		  <tr>
+			  <td class="c1">password</td>
+				<td><input type="password" id="password" placeholder="请输入密码"></td>
+		  </tr>
+			<tr>
+				<td></td>
+				<td><input type="button" id="submit" value="submit"></td>
+			</tr>
+		</table>
+	<!--</form>-->
+<script>
+/*	var username = document.getElementById("username");
+	var username = $("#username").val();
+	$("#submit").click(function(){
+		alert("username" + username);
+	})*/
+	//不要用这个
+/*	$("#username").focusin(function(){
+		$(this).val("");
+		$(this).css("color","black");
+	})
+	$("#username").focusout(function(){
+		$(this).val("username");
+	})*/
+	//奇怪的密码框不能正常显示value
+/*	$("#username").focus(function(){
+		var txt_val = $("#username").val();
+		if(txt_val == "username"){
+			$(this).val("");
+		}
+	})
+	$("#username").blur(function(){
+		var txt_val = $("#username").val();
+		if(txt_val == ""){
+			$(this).val("username");
+		}
+	})
+	$("#password").focus(function(){
+		var txt_val = $("#password").val();
+		if(txt_val == "password"){
+			$(this).val("");
+		}
+	})
+	$("#password").blur(function(){
+		var txt_val = $("#password").val();
+		if(txt_val == ""){
+			$(this).val("password");
+		}
+	})*/
+	$(function(){
+		$("#submit").click(function(){
+			alert($("#username").val());
+		})
+	})
+
+</script>
+</body>
+</html>
